@@ -14,6 +14,11 @@ bool cmp(const Interval &a, const Interval &b) {
     return a.second < b.second;
 }
 
+/*
+1. 終端時間でソートする。
+2. 終端時間が一番早いものが、最初に選ばれる区間となる。
+3. 2の終端期間以降のものが次に選ばれる区間となる。
+*/
 int main() {
     std::ifstream in("/workspaces/book-algorithm-solution/src/chapter7/input.txt");
     std::cin.rdbuf(in.rdbuf());
