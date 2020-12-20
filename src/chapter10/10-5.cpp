@@ -13,7 +13,6 @@ struct  Heap
         while (i > 0) {
             // parent index
             int p = (i - 1) / 2;
-            // TODO: when first push, maybe p is -1. Can vector assign -1?
             if (heap[p] > x) break;
             heap[i] = heap[p];
             i = p;
